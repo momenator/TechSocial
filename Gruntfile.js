@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 			js: {
 				files: [
 					'model/**/*.js',
-					'routes/**/*.js'
+					'routes/**/*.js',
 				],
 				tasks: ['jshint:all']
 			},
@@ -87,13 +87,13 @@ module.exports = function(grunt) {
 			livereload: {
 				files: [
 					'public/styles/**/*.css',
-					'public/styles/**/*.less',
-					'templates/**/*.jade',
-					'node_modules/keystone/templates/**/*.jade'
+					'public/styles/**/*.scss',
+					'templates/**/*.hbs',
+					'node_modules/keystone/templates/**/*.hbs'
 				],
 				options: {
 					livereload: true
-				}
+				},
 			}
 		}
 	});

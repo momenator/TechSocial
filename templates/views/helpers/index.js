@@ -347,6 +347,17 @@ module.exports = function() {
 		}
 		return new hbs.SafeString(output);
 	};
-	
+	_helpers.dump = function(obj){
+		if(obj){
+			console.log('object');
+			console.log(obj);
+			console.log('=========');
+		}
+		else{
+			console.log('context');
+			console.log(this);
+			console.log('=========');
+		}
+	}
 	return _helpers;
 };
