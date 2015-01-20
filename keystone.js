@@ -33,8 +33,12 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': '&u%lvZPTo#.[c{ghT"bxh;bU}pq[<2U2r.["A>5DbNRk>GUW=&a*&T(ft|&aVul]'
+	'cookie secret': '&u%lvZPTo#.[c{ghT"bxh;bU}pq[<2U2r.["A>5DbNRk>GUW=&a*&T(ft|&aVul]',
 
+	'signin url': '/signin',
+	'signin redirect': '/signin',
+	'signout redirect': '/',
+	'signout url': '/signout'
 });
 
 // Load your project's Models
