@@ -4808,14 +4808,14 @@ button.close {
     display: none !important; }
  }
 
-#header {
-  margin-top: 30px; }
+html, body {
+  height: 100%; }
 
 #footer {
-  margin-top: 30px;
+  margin-top: -52px;
   border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
+  color: #777777;
+  padding: 1rem; }
 
 .gallery-image img {
   display: block;
@@ -4823,4 +4823,15 @@ button.close {
   height: auto; }
 
 #body {
-  min-height: 400px; }
+  padding-top: 52px;
+  height: 100%; }
+
+.section {
+  height: 100%; }
+
+.navbar.navbar-default {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%; }
